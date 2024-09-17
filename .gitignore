@@ -1,0 +1,67 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.cache
+
+# Node modules
+node_modules/
+
+# Build artifacts
+dist/
+build/
+public/build/
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Editor and IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS-specific files
+._*
+__MACOSX/
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Common frontend frameworks and tools
+# React
+.cache/
+coverage/
+
+# Vue.js
+/dist/
+/coverage/
+
+# Angular
+/dist/
+/tmp/
+/out-tsc/
+
+# Svelte
+/public/build/
+
+# Next.js
+/.next/
+/out/
+
+# Gatsby
+/public/
+/.cache/
+
+# Testing frameworks
+/coverage/
+/cypress/videos/
+/cypress/screenshots/
+
+# Other
+/sitemap.xml
+/robots.txt
