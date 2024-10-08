@@ -30,7 +30,7 @@ function MainNavigation() {
               Events
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/newsletter"
               className={({ isActive }) =>
@@ -39,7 +39,7 @@ function MainNavigation() {
             >
               Newsletter
             </NavLink>
-          </li>
+          </li> */}
           {!token && <li>
             <NavLink
               to="/auth?mode=login"
@@ -60,7 +60,7 @@ function MainNavigation() {
           )}
         </ul>
       </nav>
-      <NewsletterSignup />
+      {/* <NewsletterSignup /> */}
     </header>
   );
 }
