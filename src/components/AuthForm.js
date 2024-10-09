@@ -41,21 +41,11 @@ function AuthForm() {
           </button>
         </div>
       </Form>
-      <div className={classes.googleLoginContainer}>
-        <Login className={classes.googleLoginContainer}  />
-      </div>
+      
+      <Login className={classes.googleLoginContainer}  />
+      
     </>
   );
 }
 
 export default AuthForm;
-{/* <div className={classes.googleLoginContainer}> 
-<GoogleLogin 
-  clientId={clientId}
-  buttonText="Sign in with Google"
-  onSuccess={handleGoogleLoginSuccess}
-  onFailure={handleGoogleLoginFailure}
-  cookiePolicy={'single_host_origin'}
-  className={classes.googleLoginButton} // Apply CSS class here
-/>
-</div> */}
