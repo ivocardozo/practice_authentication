@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Form, Link, useSearchParams, useActionData, useNavigation } from 'react-router-dom';
 
 import classes from './AuthForm.module.css';
+import Login from './Login';
 
 function AuthForm() {
   const data = useActionData();
@@ -40,6 +41,9 @@ function AuthForm() {
           </button>
         </div>
       </Form>
+      
+      <Login className={classes.googleLoginContainer}  />
+      
     </>
   );
 }
