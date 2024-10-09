@@ -1,0 +1,31 @@
+
+ .googleButton {
+    display: flex;
+    align-items: center; /* Vertically center icon and text */
+    background-color: #4285f4; /* Google's blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* Use Google's font */
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth hover effect */
+  }
+  
+  .googleButton:hover {
+    background-color: #357ae8; /* Darker blue on hover */
+  }
+  
+  .googleIcon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    background-image: url('../../public/google-icon-logo-svgrepo-com.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .buttonText {
+    font-weight: 500;
+  }
