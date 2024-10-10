@@ -1,5 +1,6 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
+import { GoogleOAuthProvider } from '@react-oauth/google';
 import EditEventPage from './pages/EditEvent';
 import ErrorPage from './pages/Error';
 import EventDetailPage, {
@@ -81,7 +82,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <GoogleOAuthProvider clientId='913528233277-erdag2nqhs9l5mnmn2lh7nae6lnblefp.apps.googleusercontent.com'>
+      <RouterProvider router={router} />;
+    </GoogleOAuthProvider>
+  )
 }
 
 export default App;
