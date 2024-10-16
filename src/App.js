@@ -17,6 +17,8 @@ import AuthenticationPage, { action as authAction } from './pages/Authentication
 import { action as logoutAction } from './pages/Logout';
 import { checkAuthLoader, tokenLoader } from './util/auth';
 
+import { GoogleOAuthProvider } from '@react-oauth/google';
+
 
 const router = createBrowserRouter([
   {
@@ -81,7 +83,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <GoogleOAuthProvider clientId='913528233277-erdag2nqhs9l5mnmn2lh7nae6lnblefp.apps.googleusercontent.com'>
+      <RouterProvider router={router} />
+    </GoogleOAuthProvider>
+);
 }
 
 export default App;

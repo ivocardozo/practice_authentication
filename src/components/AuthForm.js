@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Form, Link, useSearchParams, useActionData, useNavigation } from 'react-router-dom';
+import Login from './Login';
 
 import classes from './AuthForm.module.css';
 
@@ -40,6 +41,7 @@ function AuthForm() {
           </button>
         </div>
       </Form>
+      <Login />
     </>
   );
 }
