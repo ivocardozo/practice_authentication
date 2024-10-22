@@ -1,0 +1,11 @@
+.googleButton {
+    display: flex;
+    align-items: center;
+}
+
+.googleIcon {
+    background-image: url('../../public/google-icon-logo-svgrepo-com.svg');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
